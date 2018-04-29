@@ -7,3 +7,14 @@ C:\Users\Patricia\source\repos\interview\BLL\obj\Debug\BLL.csproj.CoreCompileInp
 C:\Users\Patricia\source\repos\interview\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\Patricia\source\repos\interview\BLL\obj\Debug\BLL.dll
 C:\Users\Patricia\source\repos\interview\BLL\obj\Debug\BLL.pdb
+C:\Users\Patricia\Documents\GitHub\interview\BLL\bin\Debug\BLL.dll
+C:\Users\Patricia\Documents\GitHub\interview\BLL\bin\Debug\BLL.pdb
+C:\Users\Patricia\Documents\GitHub\interview\BLL\bin\Debug\DAL.dll
+C:\Users\Patricia\Documents\GitHub\interview\BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Patricia\Documents\GitHub\interview\BLL\bin\Debug\DAL.pdb
+C:\Users\Patricia\Documents\GitHub\interview\BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Patricia\Documents\GitHub\interview\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Patricia\Documents\GitHub\interview\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Patricia\Documents\GitHub\interview\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Patricia\Documents\GitHub\interview\BLL\obj\Debug\BLL.dll
+C:\Users\Patricia\Documents\GitHub\interview\BLL\obj\Debug\BLL.pdb

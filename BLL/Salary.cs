@@ -8,8 +8,6 @@ namespace BLL
 {
     public interface Salary
     {
-
-        void calculatedAnnualSalary();
-
+        int calculatedAnnualSalary(int value);
     }
 }

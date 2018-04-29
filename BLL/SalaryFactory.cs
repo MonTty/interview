@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    abstract class SalaryFactory
+    public abstract class SalaryFactory
     {
-        public enum TypeContract { Hourly, Monthly }
-        public abstract Salary GetTypeContract(TypeContract typeContract);
+        public string contractTypeName;
+        public abstract List<Employee> GetAllEmployees();
+        public abstract Salary GetTypeContract(string typeContract);
     }
 }

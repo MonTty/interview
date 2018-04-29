@@ -8,9 +8,9 @@ namespace BLL
 {
     class Hourly: Salary
     {
-        public void calculatedAnnualSalary()
+        public int calculatedAnnualSalary(int salary)
         {
-
+            return 120 * salary * 12;
         }
     }
 }

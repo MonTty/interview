@@ -3,3 +3,12 @@ C:\Users\Patricia\source\repos\interview\DAL\bin\Debug\DAL.pdb
 C:\Users\Patricia\source\repos\interview\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Patricia\source\repos\interview\DAL\obj\Debug\DAL.dll
 C:\Users\Patricia\source\repos\interview\DAL\obj\Debug\DAL.pdb
+C:\Users\Patricia\Documents\GitHub\interview\DAL\bin\Debug\DAL.dll
+C:\Users\Patricia\Documents\GitHub\interview\DAL\bin\Debug\DAL.pdb
+C:\Users\Patricia\Documents\GitHub\interview\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Patricia\Documents\GitHub\interview\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Patricia\Documents\GitHub\interview\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Patricia\Documents\GitHub\interview\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Patricia\Documents\GitHub\interview\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Patricia\Documents\GitHub\interview\DAL\obj\Debug\DAL.dll
+C:\Users\Patricia\Documents\GitHub\interview\DAL\obj\Debug\DAL.pdb

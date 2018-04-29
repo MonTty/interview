@@ -3,23 +3,40 @@
 }
 
 <div class="jumbotron">
-
-</div>
-
-<div class="row">
-    <div class="col-sm-12">
-        <form class="form-inline" id="formGetEmployee">
-            <div class="form-group">
-                <label for="exampleInputName2">Employee Id</label>
-                <input type="text" class="form-control" name="employeeId">
-            </div>
-            <button type="submit" class="btn btn-default">Get employee</button>
-        </form>
+    <h3>Search employees</h3>
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="form-inline" id="formGetEmployee">
+                <div class="form-group">
+                    <label for="exampleInputName2">Employee Id</label>
+                    <input type="number" class="form-control" min="1" id="employeeId">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName2"></label>
+                    <button type="submit" class="btn btn-default">Get employee</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-12">
-
+        <div id="loading">
+            <img src="https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif" class="img-responsive"/>
+        </div>
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ContractTypeName</th>
+                    <th>RoleName</th>
+                    <th>HourlySalary</th>
+                    <th>MonthlySalary</th>
+                    <th>AnnualSalary</th>
+                </tr>
+            </thead>
+            <tbody id="tableInfo"></tbody>
+        </table>
     </div>
 </div>

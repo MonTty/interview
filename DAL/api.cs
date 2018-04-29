@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
 
 namespace DAL
 {
@@ -12,16 +8,14 @@ namespace DAL
     {
         private string url = "http://masglobaltestapi.azurewebsites.net/api/";
 
-        public string Get(string rute)
+        public JArray Get(string rute, string urlParameters = "")
         {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url + rute);
-            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
-
-            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-            using (Stream stream = response.GetResponseStream())
-            using (StreamReader reader = new StreamReader(stream))
+            using (var httpClient = new HttpClient())
             {
-                return reader.ReadToEnd();
+                httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36");
+                var response = httpClient.GetStringAsync(new Uri(url+rute+urlParameters)).Result;
+                var releases = JArray.Parse(response);
+                return releases;
             }
         }
     }

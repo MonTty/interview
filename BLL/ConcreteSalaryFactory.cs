@@ -1,23 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+using DAL;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
-    class ConcreteSalaryFactory: SalaryFactory
+    public class ConcreteSalaryFactory: SalaryFactory
     {
-        public override Salary GetTypeContract(TypeContract typeContract)
+        public override List<Employee> GetAllEmployees()
+        {
+            Api api = new Api();
+            JArray jEmployees = api.Get("employees");
+            return jEmployees.ToObject < List<Employee>>();
+        }
+
+        public override Salary GetTypeContract(string typeContract)
         {
             switch (typeContract)
             {
-                case TypeContract.Hourly:
+                case "HourlySalaryEmployee":
                     return new Hourly();
-                case TypeContract.Monthly:
+                case "MonthlySalaryEmployee":
                     return new Monthly();
                 default:
-                    throw new ApplicationException(string.Format("Vehicle '{0}' cannot be created", typeContract));
+                    throw new ApplicationException(string.Format("Calcualted '{0}' cannot be created", typeContract));
             }
         }
     }
